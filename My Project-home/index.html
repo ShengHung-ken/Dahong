@@ -1,94 +1,136 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>達虹公司有限公司</title>
+  <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; line-height: 1.6; }
-    header { background: #ff5e57; color: white; padding: 60px 20px; text-align: center; }
-    header img.logo { width: 100px; position: absolute; top: 20px; left: 20px; border-radius: 8px; }
-    header h1 { font-size: 2.5rem; margin-bottom: 10px; }
-    header p { font-size: 1.2rem; }
-    nav { background: #fff; padding: 10px 0; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    nav a { margin: 0 15px; color: #ff5e57; text-decoration: none; font-weight: bold; }
-    section { padding: 60px 20px; max-width: 1000px; margin: auto; }
-    h2 { color: #ff5e57; }
-    .services, .portfolio, .testimonials { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
-    .card { background: #fefefe; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
-    footer { background: #333; color: white; text-align: center; padding: 30px 10px; font-size: 0.9rem; }
-    a.button { display: inline-block; background: #ff5e57; color: white; padding: 12px 20px; border-radius: 30px; margin-top: 20px; text-decoration: none; }
+    body {
+      font-family: 'ZCOOL KuaiLe', cursive;
+      margin: 0;
+      padding: 0;
+      background: #fff8f0;
+      color: #333;
+    }
+    header {
+      background: #ff7f50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      background: #ffd9b3;
+      padding: 1rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+    }
+    footer {
+      background: #ff7f50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    .line-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.8rem 1.2rem;
+      background-color: #00c300;
+      color: white;
+      font-weight: bold;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    .line-button:hover {
+      background-color: #00a000;
+    }
   </style>
 </head>
+
 <body>
   <header>
-    <h1>讓你的T恤，成為舞台焦點！</h1>
-    <p>達虹客製團服 × 自由創意無極限</p>
-    <a href="#contact" class="button">立即設計</a>
+    <img src="商標.png" alt="Dahong Logo" style="height: 80px;">
+    <h1>Dahong 達虹公司有限公司</h1>
+    <p>可愛 x 客製 x 活潑的 T 恤設計專家</p>
   </header>
 
   <nav>
     <a href="#about">關於我們</a>
-    <a href="#services">服務項目</a>
-    <a href="#portfolio">作品展示</a>
-    <a href="#testimonials">好評推薦</a>
+    <a href="#services">我們的服務</a>
+    <a href="#workflow">訂購流程</a>
+    <a href="#gallery">作品展示</a>
     <a href="#contact">聯絡我們</a>
   </nav>
 
   <section id="about">
-    <h2>關於達虹</h2>
-    <p>我們是達虹公司有限公司，一群熱愛創意的年輕人，從小量客製、活動團服、班服到企業制服，只要你想做，我們就能幫你完成！</p>
+    <h2>關於我們</h2>
+    <p>達虹公司有限公司專注於可愛手繪風格的 T 恤設計，提供線上客製化、團體服訂製等服務，讓每個人都能穿上獨一無二的創意服飾。</p>
   </section>
 
   <section id="services">
     <h2>我們的服務</h2>
-    <div class="services">
-      <div class="card">
-        <h3>T恤客製設計</h3>
-        <p>上傳圖片、文字、Logo，自由設計預覽。</p>
-      </div>
-      <div class="card">
-        <h3>團體服訂製</h3>
-        <p>班服、系服、社團服、活動紀念衫、公司制服。</p>
-      </div>
-      <div class="card">
-        <h3>設計代工服務</h3>
-        <p>設計沒頭緒？我們專業設計師替你搞定！</p>
-      </div>
-      <div class="card">
-        <h3>大量印製優惠</h3>
-        <p>快速出貨，品質穩定，價格划算。</p>
-      </div>
-    </div>
+    <ul>
+      <li>線上 T 恤圖案設計與即時預覽</li>
+      <li>客製化團服、班服、社團服設計與大量印製</li>
+      <li>支援自有圖案上傳，或由我們代設計</li>
+      <li>小量快速印製服務，無需大量訂購</li>
+    </ul>
   </section>
 
-  <section id="portfolio">
-    <h2>我們的作品</h2>
-    <div class="portfolio">
-      <div class="card">桃園高中畢業班服</div>
-      <div class="card">籃球社系際盃應援服</div>
-      <div class="card">公司尾牙主題制服</div>
-      <div class="card">婚禮親友團造型T</div>
-    </div>
+  <section id="workflow">
+    <h2>訂購流程</h2>
+    <ol>
+      <li>選擇想要的 T 恤樣式與顏色</li>
+      <li>上傳設計圖案或使用線上設計工具</li>
+      <li>確認設計與報價</li>
+      <li>付款後製作，約 7-10 個工作天出貨</li>
+      <li>出貨後將提供追蹤資訊</li>
+    </ol>
   </section>
 
-  <section id="testimonials">
-    <h2>客戶好評</h2>
-    <div class="testimonials">
-      <div class="card">「設計超簡單！10分鐘就搞定，出貨也超快！」 – 小偉</div>
-      <div class="card">「布料舒服，印刷精美，穿出去超有氣勢！」 – Annie</div>
-      <div class="card">「設計師超貼心，成品超出預期！」 – Kevin</div>
+  <section id="gallery">
+    <h2>作品展示</h2>
+    <div class="gallery">
+      <img src="作品1.png" alt="作品1">
+      <img src="作品2.png" alt="作品2">
+      <img src="作品3.png" alt="作品3">
+      <img src="作品4.png" alt="作品4">
     </div>
   </section>
 
   <section id="contact">
     <h2>聯絡我們</h2>
-    <p>📞 電話：0976-328304<br />📧 Line：yre70124<br />🏢 地址：桃園市大園區後厝一路28號</p>
-    <a href="mailto:service@dahong.com.tw" class="button">寫信給我們</a>
+    <p>電話: <a href="tel:+886976328304">+886 976 328 304</a></p>
+    <p>Shopee 店鋪：<a href="https://shopee.tw/veee.tw" target="_blank">https://shopee.tw/veee.tw</a></p>
+    <a href="https://line.me/R/ti/p/yre70124" target="_blank" class="line-button">📲 加入 LINE 聯絡我們</a>
   </section>
 
   <footer>
-    <p>© 2025 達虹公司有限公司 Dahong Co., Ltd. 版權所有</p>
+    <p>&copy; 2025 Dahong Co., Ltd. All rights reserved.</p>
   </footer>
 </body>
+
 </html>
