@@ -96,6 +96,58 @@
       text-align: center;
       padding: 1rem;
     }
+
+    @media (max-width: 768px) {
+      header h1 {
+        display: block;
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 1rem;
+      }
+
+      nav a {
+        margin: 0.3rem 0.8rem;
+        font-size: 0.9rem;
+      }
+
+      section {
+        padding: 2rem 1rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .services, .workflow, .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .service, .step, .gallery-item {
+        padding: 1rem;
+        font-size: 0.95rem;
+      }
+
+      .step i, .service i {
+        font-size: 1.5rem;
+      }
+
+      .line-button {
+        width: 100%;
+        display: inline-block;
+        padding: 1rem;
+        font-size: 1rem;
+      }
+
+      footer {
+        font-size: 0.85rem;
+      }
+    }
   </style>
 </head>
 
