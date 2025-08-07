@@ -4,126 +4,159 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>達虹公司有限公司</title>
-  <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+  <title>Dahong 達虹公司有限公司</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'ZCOOL KuaiLe', cursive;
       margin: 0;
-      padding: 0;
-      background: #fff8f0;
-      color: #333;
+      font-family: 'Patrick Hand', cursive;
+      background-color: #fff8e1;
+      color: #4e342e;
     }
+
     header {
-      background: #ff7f50;
-      color: white;
+      background-color: #ffeb3b;
       padding: 1rem;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
     }
+
+    header img {
+      height: 60px;
+      vertical-align: middle;
+    }
+
+    header h1 {
+      display: inline;
+      margin-left: 10px;
+      font-size: 2rem;
+      vertical-align: middle;
+    }
+
     nav {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      background: #ffd9b3;
-      padding: 1rem;
-      flex-wrap: wrap;
+      margin-top: 0.5rem;
     }
+
     nav a {
+      margin: 0 1rem;
+      color: #6d4c41;
       text-decoration: none;
-      color: #333;
       font-weight: bold;
     }
+
     section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
+      padding: 4rem 2rem;
+      text-align: center;
     }
-    .gallery {
+
+    h2 {
+      color: #fbc02d;
+    }
+
+    .services, .workflow, .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
+      gap: 2rem;
+      margin-top: 2rem;
     }
-    .gallery img {
-      width: 100%;
-      border-radius: 12px;
-    }
-    footer {
-      background: #ff7f50;
-      color: white;
-      text-align: center;
+
+    .service, .step, .gallery-item {
+      background-color: #fffde7;
+      border: 2px dashed #ffe082;
       padding: 1rem;
+      border-radius: 1rem;
+      transition: transform 0.3s ease;
     }
+
+    .service:hover, .step:hover, .gallery-item:hover {
+      transform: scale(1.05);
+    }
+
     .line-button {
       display: inline-block;
       margin-top: 1rem;
       padding: 0.8rem 1.2rem;
-      background-color: #00c300;
-      color: white;
+      background-color: #fbc02d;
+      color: #4e342e;
       font-weight: bold;
       border-radius: 30px;
       text-decoration: none;
       transition: background-color 0.3s;
     }
+
     .line-button:hover {
-      background-color: #00a000;
+      background-color: #f9a825;
+    }
+
+    footer {
+      background-color: #ffe082;
+      text-align: center;
+      padding: 1rem;
     }
   </style>
 </head>
 
 <body>
   <header>
-    <img src="商標.png" alt="Dahong Logo" style="height: 80px;">
+    <img src="商標.png" alt="Dahong Logo">
     <h1>Dahong 達虹公司有限公司</h1>
-    <p>可愛 x 客製 x 活潑的 T 恤設計專家</p>
+    <nav>
+      <a href="#about">關於我們</a>
+      <a href="#services">服務項目</a>
+      <a href="#workflow">訂購流程</a>
+      <a href="#gallery">作品展示</a>
+      <a href="#contact">聯絡我們</a>
+    </nav>
   </header>
-
-  <nav>
-    <a href="#about">關於我們</a>
-    <a href="#services">我們的服務</a>
-    <a href="#workflow">訂購流程</a>
-    <a href="#gallery">作品展示</a>
-    <a href="#contact">聯絡我們</a>
-  </nav>
 
   <section id="about">
     <h2>關於我們</h2>
-    <p>達虹公司有限公司專注於可愛手繪風格的 T 恤設計，提供線上客製化、團體服訂製等服務，讓每個人都能穿上獨一無二的創意服飾。</p>
+    <p>Dahong 是一家活潑又年輕的 T 桖設計公司，我們提供線上客製化與團體服訂製服務，讓穿搭成為你的風格語言！</p>
   </section>
 
   <section id="services">
     <h2>我們的服務</h2>
-    <ul>
-      <li>線上 T 恤圖案設計與即時預覽</li>
-      <li>客製化團服、班服、社團服設計與大量印製</li>
-      <li>支援自有圖案上傳，或由我們代設計</li>
-      <li>小量快速印製服務，無需大量訂購</li>
-    </ul>
+    <div class="services">
+      <div class="service">
+        <h3>線上客製化</h3>
+        <p>上傳設計、即時預覽，打造你的專屬 T-shirt。</p>
+      </div>
+      <div class="service">
+        <h3>團體服訂製</h3>
+        <p>畢業班、社團、活動團服，快速統一風格！</p>
+      </div>
+      <div class="service">
+        <h3>設計協助</h3>
+        <p>提供專業意見與範例設計，幫你靈感爆棚。</p>
+      </div>
+    </div>
   </section>
 
-<section id="workflow" class="py-16 bg-white text-center">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl font-bold mb-10 text-yellow-600">訂購流程</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-        <div>
-          <i class="fas fa-comments text-4xl text-yellow-500 mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">1. 聯繫我們</h3>
-          <p class="text-gray-700">透過 LINE 或網站聯絡我們討論需求。</p>
-        </div>
-        <div>
-          <i class="fas fa-pen-nib text-4xl text-yellow-500 mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">2. 設計確認</h3>
-          <p class="text-gray-700">依需求提供草圖，確定圖案與款式。</p>
-        </div>
-        <div>
-          <i class="fas fa-tshirt text-4xl text-yellow-500 mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">3. 製作T恤</h3>
-          <p class="text-gray-700">確認完畢後開始印製並進行品管。</p>
-        </div>
-        <div>
-          <i class="fas fa-truck text-4xl text-yellow-500 mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">4. 出貨寄送</h3>
-          <p class="text-gray-700">製作完成後寄送到你手上，安心穿搭！</p>
-        </div>
+  <section id="workflow">
+    <h2>訂購流程</h2>
+    <div class="workflow">
+      <div class="step">
+        <i class="fas fa-comments fa-2x"></i>
+        <h3>1. 聯繫我們</h3>
+        <p>透過 LINE 或網站聯絡我們討論需求。</p>
+      </div>
+      <div class="step">
+        <i class="fas fa-pen-nib fa-2x"></i>
+        <h3>2. 設計確認</h3>
+        <p>依需求提供草圖，確定圖案與款式。</p>
+      </div>
+      <div class="step">
+        <i class="fas fa-tshirt fa-2x"></i>
+        <h3>3. 製作T恤</h3>
+        <p>確認完畢後開始印製並進行品管。</p>
+      </div>
+      <div class="step">
+        <i class="fas fa-truck fa-2x"></i>
+        <h3>4. 出貨寄送</h3>
+        <p>製作完成後寄送到你手上，安心穿搭！</p>
       </div>
     </div>
   </section>
@@ -131,10 +164,11 @@
   <section id="gallery">
     <h2>作品展示</h2>
     <div class="gallery">
-      <img src="作品1.png" alt="作品1">
-      <img src="作品2.png" alt="作品2">
-      <img src="作品3.png" alt="作品3">
-      <img src="作品4.png" alt="作品4">
+      <div class="gallery-item"><img src="作品1.png" alt="作品1" style="width:100%; border-radius:1rem;"></div>
+      <div class="gallery-item"><img src="作品2.png" alt="作品2" style="width:100%; border-radius:1rem;"></div>
+      <div class="gallery-item"><img src="作品3.png" alt="作品3" style="width:100%; border-radius:1rem;"></div>
+      <div class="gallery-item"><img src="作品4.png" alt="作品4" style="width:100%; border-radius:1rem;"></div>
+      <div class="gallery-item"><img src="作品5.png" alt="作品5" style="width:100%; border-radius:1rem;"></div>
     </div>
   </section>
 
